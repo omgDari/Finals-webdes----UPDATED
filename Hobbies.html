@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hobbies - Christian & Prince</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Hobbies</h1>
+        <nav>
+            <a href="#motorcycles">Motorcycles</a>
+            <a href="#billiards">Billiards</a>
+            <a href="#about-us">About Us</a>
+        </nav>
+    </header>
+
+    <section id="motorcycles" class="section">
+        <h2>MOTORCYCLES</h2>
+        <p>For Prince and me, motorcycles are more than just a means of transportation—they’re a passion. The feeling of the wind in our faces and the sound of the engine roaring to life makes every ride an unforgettable experience.</p>
+        <div class="photo-boxes">
+            <figure class="photo-box" onclick="openLightbox('moto1.jfif')">
+                <img src="moto1.jfif" alt="Motorcycle 1">
+                <figcaption>Prince Dariouz's Motorcycle</figcaption>
+            </figure>
+            <figure class="photo-box" onclick="openLightbox('moto3.jfif')">
+                <img src="moto3.jfif" alt="Motorcycle 2">
+                <figcaption>Motorcycle Meet at Escanio</figcaption>
+            </figure>
+            <figure class="photo-box" onclick="openLightbox('moto2.jfif')">
+                <img src="moto2.jfif" alt="Motorcycle 3">
+                <figcaption>Christian's Motorcycle</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="billiards" class="section">
+        <h2>BILLIARDS</h2>
+        <p>Billiards is a game that brings Prince and me together, combining precision and creativity. We enjoy the challenge of each shot, testing our focus and tactics. It’s a fun way to spend time with friends while sharpening our skills and having a few laughs along the way.</p>
+        <div class="photo-boxes">
+            <figure class="photo-box" onclick="openLightbox('billard1.jfif')">
+                <img src="billard1.jfif" alt="Billiards 1">
+                <figcaption>Prince practicing his trick shot.</figcaption>
+            </figure>
+            <figure class="photo-box" onclick="openLightbox('billard2.jfif')">
+                <img src="billard2.jfif" alt="Billiards 2">
+                <figcaption>A competetive match between us.</figcaption>
+            </figure>
+            <figure class="photo-box" onclick="openLightbox('billard3.jfif')">
+                <img src="billard3.jfif" alt="Billiards 3">
+                <figcaption>Christian aiming for the 7 ball.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="about-us" class="section">
+        <h2>ABOUT US</h2>
+        <p>We are Prince and Christian, two friends united by our shared enthusiasm for motorcycles and billiards. This website is a reflection of our passion and creativity, where we celebrate the hobbies that bring us joy and strengthen our friendship. Through this website, we invite you to explore what excites and inspires us.</p>
+        <div class="photo-boxes">
+            <figure class="photo-box" onclick="openLightbox('about1.jfif')">
+                <img src="about1.jfif" alt="About Us 1">
+                <figcaption> Prince Dariouz Jon Baybay</figcaption>
+            </figure>
+            <figure class="photo-box" onclick="openLightbox('about2.jfif')">
+                <img src="about2.jfif" alt="About Us 2">
+                <figcaption>Christian D. Hernando</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Large Image">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Christian Hernando & Prince Dariouz Jon Baybay | Our Hobbies</p>
+    </footer>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightbox.style.display = 'flex';
+            lightboxImage.src = imageSrc;
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
